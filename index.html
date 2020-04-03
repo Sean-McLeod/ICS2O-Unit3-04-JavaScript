@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="program calculates area of trapezoid">
+    <meta name="keywords" content="math, trapezoid">
+    <meta name="author" content="sean mcleod">
+    <title>Area of a Trapezoid</title>
+  </head>
+  <body>
+    <h1>Area of Trapezoid Calculator</h1>
+    <img src="./images/trapezoid.jpg" alt="trapezoid">
+    <p><i>a</i> base</p>
+    <input type="text" id="eng">
+    <p><i>b</i> base</p>
+    <input type="text" id="tree">
+    <p><i>h</i> height</p>
+    <input type="text" id="cat">
+    <button onclick="myfunction()">Calculate The Area</button>
+    <script>
+      function myfunction() {
+      let upperBase
+      let lowerBase
+      let height
+      let trapezoidArea
+      upperBase=parseInt(document.getElementById("eng").value);
+      lowerBase=parseInt(document.getElementById("tree").value);
+      height=document.getElementById("cat").value;
+      trapezoidArea=(upperBase+lowerBase)*height/2
+      alert("The area of the trapezoid is "+ trapezoidArea)
+      }
+    </script>
+  </body>
+</html>
